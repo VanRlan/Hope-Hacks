@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>EatSmart</title>
+    <script src="https://kit.fontawesome.com/44c590d39e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <header>
+        <nav class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="#recipe">Recipes</a>
+            <a href="#contact">Contact</a>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search" />
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero-Image -->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide"
+                    style="background: url(/images/chicken-bites-and-asparagus-recipe.jpeg) no-repeat;">
+                    <div class="content">
+                        <span>Outstanding Food</span>
+                        <h3>Meat & Veggies</h3>
+                        <a href="#" class="btn">Get Recipe</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide"
+                    style="background: url(/images/salmon-with-kale-dinner-for-two-1581382241.jpeg) no-repeat;">
+                    <div class="content">
+                        <span>Outstanding Food</span>
+                        <h3 class="pescatarian">Pescatarian</h3>
+                        <a href="#" class="btn">Get Recipe</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide" style="background: url(/images/SalmonTrayBake-87c9f44.jpeg) no-repeat;">
+                    <div class="content">
+                        <span>Outstanding Food</span>
+                        <h3>Veggies</h3>
+                        <a href="#" class="btn">Get Recipe</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide"
+                    style="background: url(/images/Nutty-chicken-satay-a8c094e.jpeg) no-repeat;">
+                    <div class="content">
+                        <span>Outstanding Food</span>
+                        <h3>Quick & <br>Easy</h3>
+                        <a href="#" class="btn">Get Recipe</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <div class="review-container">
+        <div class="reviews fade">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <h2>Best </h2>
+            <p>Ninoshka</p>
+        </div>
+        <br>
+      
+        <div class="reviews fade">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <h2>Best I have ever had</h2>
+            <p>Marrero</p>
+        </div>
+        <br>
+      
+        <div class="reviews fade">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+          <h2>Best I have ever had</h2>
+          <p>Ruiz</p>
+        </div>
+        <br>
+
+        <div class="reviews fade">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <img src="images/Star.png">
+            <h2>Best I have ever had</h2>
+            <p>Iveleese</p>
+        </div>
+        <br>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div class="reviewButton">
+        <span class="reviewSlider" onclick="currentSlide(1)"></span>
+        <span class="reviewSlider" onclick="currentSlide(2)"></span>
+        <span class="reviewSlider" onclick="currentSlide(3)"></span>
+        <span class="reviewSlider" onclick="currentSlide(4)"></span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <img class="footer_logo" src="images/eatsmart.png" alt="logo" />
+        <div class="footer-social-icons">
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.facebook.com/" class="social-icon">
+                        <i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="" class="social-icon"> <i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="" class="social-icon"> <i class="fa fa-rss"></i></a>
+                </li>
+                <li>
+                    <a href="" class="social-icon"> <i class="fa fa-youtube"></i></a>
+                </li>
+                <li>
+                    <a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <p class="footer_p">© 2022 Hope Hacks Project</p>
+    </footer>
+
+    <!-- <header class="intro">
+        <h1>Personalize your plan</h1>
+        <h2>1. Choose your preferences</h2>
+        <p>
+            Select your options. You will still have access to all recipes each
+            week.
+        </p>
+    </header>
+
+    <!-- Select your choices -->
+    <!-- <main>
+        <div class="product">
+            <div class="box-container">
+                <div class="box">
+                    <img src="/images/meat-and-veggies.jpeg" alt="meatandveggies">
+                    <h3>Meat & Veggies</h3>
+                </div>
+                <div class="box">
+                    <img src="/images/veggies.png" alt="veggies">
+                    <h3>Veggies</h3>
+                </div>
+                <div class="box">
+                    <img src="/images/family-icon-3.png" alt="">
+                    <h3>Family Friendly</h3>
+                </div>
+                <div class="box">
+                    <img src="/images/fit-&-wholesome.png" alt="">
+                    <h3>Fit & Wholesome</h3>
+                </div>
+                <div class="box">
+                    <img src="/images/easy-icon-2.jpeg" alt="">
+                    <h3>Quick and Easy</h3>
+                </div>
+                <div class="box">
+                    <img src="/images/pesca.png" alt="">
+                    <h3>Pescatarian</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Plan Table -->
+    <!-- <article class="pricing-table">
+        <h3>2. Customize your plan size</h4>
+            <div class="grid">
+                <div class="plan-box basic">
+                    <div class="title">Basic</div>
+                    <div class="price">
+                        <h4><b>$24.99</b></h4>
+                        <span>per month</span>
+                    </div>
+                    <div class="features">
+                        <p>2 People</p>
+                        <p>4 Recipes</p>
+                        <p>4 meals for 2 people per week</p>
+                        <p>8 total servings</p>
+                    </div>
+                    <div class="button">
+                        <button>Select this plan</button>
+                    </div>
+                </div>
+                <div class="plan-box mid">
+                    <div class="title">Reccomended</div>
+                    <div class="price">
+                        <h4><b>$49.99</b></h4>
+                        <span>per month</span>
+                    </div>
+                    <div class="features">
+                        <p>4 People</p>
+                        <p>6 Recipes</p>
+                        <p>6 meals for 4 people per week</p>
+                        <p>24 total servings</p>
+                    </div>
+                    <div class="button">
+                        <button>Select this plan</button>
+                    </div>
+                </div>
+                <div class="plan-box michelin">
+                    <div class="title">Michelin</div>
+                    <div class="price">
+                        <h4><b>$99.99</b></h4>
+                        <span>per month</span>
+                    </div>
+                    <div class="features">
+                        <p>6 People</p>
+                        <p>8 Recipes</p>
+                        <p>8 meals for 6 people per week</p>
+                        <p>48 total servings</p>
+                    </div>
+                    <div class="button">
+                        <button>Select this plan</button>
+                    </div>
+                </div>
+            </div>
+    </article>  -->
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
