@@ -2,9 +2,7 @@ const searchForm = document.querySelector('form');
 const searchResultdiv = document.querySelector('.search-result');
 const container = document.querySelector('.container');
 let searchQuery = '';
-const APP_ID = '42f5c3b5';
-const APP_key = 'b1822162989f37abedae2ab9e9587084'
-const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}`;
+
 
 searchForm.addEventListener('submit', (e)=>{
     e.preventDefault();
@@ -14,7 +12,7 @@ searchForm.addEventListener('submit', (e)=>{
 })
 
 async function fetchAPI(){
-    const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${APP_ID}&app_key=${APP_key}`;
+    const baseURL = `http://localhost:5000/recipe?q=${searchQuery}`;
     const response = await fetch(baseURL);
     const data = await response.json();
     generateHTML(data.hits)
