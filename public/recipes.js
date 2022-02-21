@@ -1,17 +1,25 @@
 const searchForm = document.querySelector('form');
 const searchResultdiv = document.querySelector('.search-result');
 const container = document.querySelector('.container');
-let searchQuery = '';
+
+// search recipe in search bar
+(function () {
+  const parameters = new URLSearchParams(window.location.search);  
+  let searchQuery = parameters.get('search');
+  if(searchQuery) {
+    fetchAPI(searchQuery);
+  }
+})();
 
 
 searchForm.addEventListener('submit', (e)=>{
     e.preventDefault();
-    searchQuery = e.target.querySelector('input').value;
+    let searchQuery = e.target.querySelector('input').value;
     // console.log(searchQuery)
-    fetchAPI();
+    fetchAPI(searchQuery);
 })
 
-async function fetchAPI(){
+async function fetchAPI(searchQuery){
     const baseURL = `http://localhost:5000/recipe?q=${searchQuery}`;
     const response = await fetch(baseURL);
     const data = await response.json();
