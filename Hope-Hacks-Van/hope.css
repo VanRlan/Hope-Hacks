@@ -1,0 +1,74 @@
+/* contact page  */
+
+body{
+  background-image: url("/Users/Alondra/Desktop/Hope Hack/Hope-Hacks-Van/images/ingredients.jpeg");
+  background-repeat: inherit;
+  background-size: contain;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: white;
+}
+
+input[type="submit"] {
+  background-color: darkolivegreen;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: gray;
+}
+
+/* container */
+.container {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* two columns that float next to eachother */
+.column {
+  float: left;
+  width: 35%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* .row{
+    background-color: white;
+  } */
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* less than 600px wide, make the two columns stack on top of each other */
+@media screen and (max-width: 600px) {
+  .column,
+  .row,
+  h2,
+  p, body,
+  input[type="submit"],
+  input[type="text"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+

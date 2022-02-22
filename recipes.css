@@ -44,7 +44,7 @@ section{
     margin-bottom: 30px;
 }
 
-form{
+.main_search{
     width: 90%;
     max-width: 400px;
     margin: 20px auto;
@@ -52,7 +52,7 @@ form{
     border-radius: 4px;
 }
 
-form input{
+.main_search input{
     width: 90%;
     background-color: transparent;
     padding: 10px;
@@ -62,7 +62,7 @@ form input{
     display: inline-block;
 }
 
-form ion-icon{
+.main_search ion-icon{
     width: 9%;
     font-size: 3rem;
     margin: -9px;
@@ -151,3 +151,5 @@ form ion-icon{
         font-size: 2rem;
     }
 }
+
+
