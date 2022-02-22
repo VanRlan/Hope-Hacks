@@ -9,7 +9,7 @@
 
   <title>Document</title>
   <!--external css-->
-  <link rel="stylesheet" href="hope.css">
+  <link rel="stylesheet" href="contact.css">
   <!--social media icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--font-->
@@ -26,7 +26,7 @@
       <a href="recipes">Recipes</a>
       <a href="contact">Contact</a>
       <div class="search-container">
-        <form action="/action_page.php">
+        <form action="/recipes">
           <input type="text" placeholder="Search.." name="search" />
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
@@ -34,28 +34,32 @@
     </nav>
   </header>
 
-  <div class="container">
-    <div style="text-align:center">
-      <h2>Contact</h2>
-      <p>We want to hear from you, contact us using the information below!</p>
-    </div>
-    <div class="row">
-      <div class="column">
-        <img src="" style="width: 100%">
-      </div>
-      <div class="column">
-        <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Your email..">
-          <label for="subject">Comments</label>
-          <textarea id="subject" name="subject" style="height:170px;" placeholder="What's your next meal?"></textarea>
-          <input type="submit" value="Submit">
+  <!-- Contact -->
+  <div class="contact">
+    <div class="container-two">
+      <div class="formBx">
+        <form>
+          <h2>Contact Us</h2>
+          <div class="inputBox">
+            <input type="text" id="fullName" name="name" required="required">
+            <label for="fullName">Full Name</label>
+          </div>
+          <div class="inputBox">
+            <input type="email" id="emailAddress" name="email" required="required">
+            <label for="emailAddress">Email Address</label>
+          </div>
+          <div class="inputBox">
+            <textarea id="message" name="commentArea" required="required"></textarea>
+            <label for="message">Type Your Message Here...</label>
+          </div>
+          <div class="inputBox">
+            <input type="submit" value="Send" name="submit">
+          </div>
         </form>
       </div>
+      <!-- <div class="imgBx">
+        <img src="../img/shogun_raiden_genshin_impact_portrait_render_by_deg5270_deqwdhv-fullview.png" alt="">
+      </div> -->
     </div>
   </div>
 
@@ -63,30 +67,30 @@
   <footer>
     <img class="footer_logo" src="../images/eatsmart.png" alt="logo" />
     <div class="footer-social-icons">
-        <ul class="social-icons">
-            <li>
-                <a href="https://www.facebook.com/" class="social-icon">
-                    <i class="fa fa-facebook"></i></a>
-            </li>
-            <li>
-                <a href="" class="social-icon"> <i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
-                <a href="" class="social-icon"> <i class="fa fa-rss"></i></a>
-            </li>
-            <li>
-                <a href="" class="social-icon"> <i class="fa fa-youtube"></i></a>
-            </li>
-            <li>
-                <a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a>
-            </li>
-        </ul>
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.facebook.com/" class="social-icon">
+            <i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="" class="social-icon"> <i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="" class="social-icon"> <i class="fa fa-rss"></i></a>
+        </li>
+        <li>
+          <a href="" class="social-icon"> <i class="fa fa-youtube"></i></a>
+        </li>
+        <li>
+          <a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a>
+        </li>
+      </ul>
     </div>
 
     <p class="footer_p">© 2022 Hope Hacks Project</p>
-</footer>
+  </footer>
 
-  
+
 </body>
 
 </html>
