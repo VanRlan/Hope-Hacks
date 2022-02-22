@@ -65,7 +65,7 @@
     /* background-size: cover; */
     /* background-repeat: no-repeat; */
     min-height: 90vh;
-    margin-bottom: -20px; 
+    margin-bottom: -20px;
 }
 
 .container-two {
@@ -229,6 +229,7 @@ footer {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    padding: 10px 0;
 }
 
 ul {
