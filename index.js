@@ -31,7 +31,7 @@ app.get('/recipe', (req, response) => {
         if(err){
             console.log(`Error: ${err}`)
         } else {
-            // console.log(`Body: ${body}`);
+            // console.log(`Body: ${body}`)
 
             const recipeRes = JSON.parse(body);
             const { hits } = recipeRes;
